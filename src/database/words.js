@@ -1,0 +1,22 @@
+let words = ['Society', 'Impossible', 'Fit',
+    'Responsibility', 'Will', 'Mother',
+    'Respect', 'Challenge', 'Fear',
+    'Weapon', 'Hijack', 'Worry',
+    'Sports', 'Fortune', 'Posion',
+    'Mend', 'Escape', 'youth',
+    'Failure', 'cheat', 'friendship',
+    'break', 'trust', 'welcome',
+    'enviroment', 'social', 'Goverment',
+    'talent', 'stress', 'reality',
+    'hesitate', 'media', 'imagine',
+    'Deteriorate', 'language', 'religion',
+    'teacher', 'industry', 'Insult',
+    'Joy', 'Jungle', 'Mad',
+    'Make', 'Obey', 'Overcome',
+    'Struggle', 'Travel', 'Victory',
+    'Worry', 'War', 'Union',
+    'Thank', 'Temper', 'Stamina',
+    'Food','hunger','road',
+    'Map','Develop','Technology']
+
+export { words };
