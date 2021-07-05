@@ -1,7 +1,9 @@
 <template>
   <div>
-    <span class="timer">Timer : 00:00:<span class="countdown">{{ countDown }}</span></span>
-    <br>
+    <span class="timer"
+      >Timer : 00:00:<span class="countdown">{{ countDown }}</span></span
+    >
+    <br />
     <!-- <span class="word">{{ vocabulary }}</span> -->
   </div>
 </template>
@@ -31,6 +33,10 @@ export default {
         this.question -= 1;
         this.vocabulary = words[Math.floor(Math.random() * words.length)];
         this.countDownTimer();
+        let music = new Audio(
+          "http://www.realmofdarkness.net/audio/vg/sf/sf2/perfect.mp3"
+        );
+        music.play();
       }
     },
   },
@@ -49,12 +55,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-.timer{
+.timer {
   color: #a30808;
   font-weight: bold;
   font-size: large;
   margin: 0px 108px;
-  
 }
 </style>

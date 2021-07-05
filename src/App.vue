@@ -8,7 +8,7 @@
         >
         <br />
         <br /><br />
-        <span class="word">{{60-question+1}})  {{ vocabulary }}</span>
+        <span class="word">{{ 60 - question + 1 }}) {{ vocabulary }}</span>
       </div>
       <div v-else class="timer">End :)</div>
     </div>
@@ -30,6 +30,10 @@ export default {
   watch: {
     countDown() {
       if (this.countDown === 0 && this.question > 0) {
+        let music = new Audio(
+          "http://www.realmofdarkness.net/audio/vg/sf/sf2/perfect.mp3"
+        );
+        music.play();
         this.countDown = 15;
         this.question -= 1;
         this.vocabulary = words[Math.floor(Math.random() * words.length)];
