@@ -8,7 +8,7 @@
         >
         <br />
         <br /><br />
-        <span class="word">{{ vocabulary }}</span>
+        <span class="word">{{60-question+1}})  {{ vocabulary }}</span>
       </div>
       <div v-else class="timer">End :)</div>
     </div>
